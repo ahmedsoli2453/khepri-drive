@@ -140,7 +140,7 @@ Stores current parameters and gains in non-volatile memory.
 ## 🎛 Control Modes
 
 ### `set_open_loop(value: int)`
-Open-loop voltage or duty control.
+Open-loop voltage or duty control. the value provided is between 0 and 10000 such that 5000 means zero, 10000 means max duty in CW rotation while 0 means max duty in CCW rotation. be careful when using this function as just setting the value to zero will turn the motor with max velocity.
 
 ### `set_position(degrees: float)`
 Closed-loop position control.
@@ -202,4 +202,4 @@ Reads and decodes one telemetry packet if available.
 
 ## 👤 Author
 
-Khepri Drive Project
+Eng Ahmed soliman
